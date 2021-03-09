@@ -29,12 +29,15 @@ import java.util.Scanner;
 		System.out.println(line2);
 				Double d1=(line1);
 				Double d2=(line2);
-				boolean equals=d1.equals(d2);
-				if( equals == true) {
-					System.out.println("Both lines are same");
-						}
-				else {
-					System.out.println("Both lines are different");
-					}
+				Double comp=(double) d1.compareTo(d2);
+				if(comp ==1 ) {
+					System.out.println("line1 is higher than line2 ");
+				}
+				if(comp==0){
+					System.out.println("line1 and line2 values are same");
+				}
+				if(comp==-1) {
+					System.out.println("line2 is greater than line1");
+				}
   }
 }
