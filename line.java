@@ -27,5 +27,14 @@ import java.util.Scanner;
 		Double line2=Math.sqrt((a2-a1)^2+(b2-b1)^2);
 		System.out.println(line1);
 		System.out.println(line2);
-}
+				Double d1=(line1);
+				Double d2=(line2);
+				boolean equals=d1.equals(d2);
+				if( equals == true) {
+					System.out.println("Both lines are same");
+						}
+				else {
+					System.out.println("Both lines are different");
+					}
+  }
 }
